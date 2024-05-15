@@ -1,0 +1,127 @@
+      /* css reset */
+      *{
+        margin: 0;
+        padding: 0;
+        }
+        /* navigation bar */
+        #navbar{
+            display:flex;
+            align-items: center;
+            height: 50px;
+        }
+        /* navigation bar :logo and image  */
+        #logo{
+        margin: 8px 35px;
+        }
+        #logo img{
+            height: 50px;
+            margin: 10px 20px;
+        }
+        /* navigation bar :list styling */
+        #navbar{
+            position:relative;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.8rem;
+        }
+        #navbar ul li a{
+            color: rgb(0, 0, 0);
+            display: block;
+            padding:   10px 72px;
+            border-radius: 70px;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: rgb(207, 202, 225);
+        }
+        
+        /* home section  */
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 350px;
+            justify-content: center;
+            align-items: center;
+        }
+        #home::before{
+            content: "";
+            background:url('../bbc.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 130%;
+            width: 100%;
+            z-index: -1;
+            background-size: cover;
+         opacity: 0.6;
+        }
+        
+        #home h1{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        }
+        
+        /* utility classes */
+         
+        .h-primary{
+            font-size: 5rem;
+            padding-top: 8%;
+            text-align: center;
+        }
+        
+        .h-secondry{
+            font-size: 2rem;
+            padding: 12px;
+        }
+        .inline{
+            display: inline-block;
+        }
+        
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid beige;
+            background: transparent;
+            color: rgb(20, 19, 19);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+          }
+          
+          span {
+            background: rgb(255, 237, 237);
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+          }
+          
+          button:hover span {
+            width: 100%;
+          }
+          
+          button:hover {
+            border: none;
+          }

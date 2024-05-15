@@ -1,0 +1,93 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    }
+    /* navigation bar */
+    #navbar{
+        display:flex;
+        align-items: center;
+        height: 50px;
+    }
+    /* navigation bar :logo and image  */
+    #logo{
+    margin: 8px 35px;
+    }
+    #logo img{
+        height: 50px;
+        margin: 10px 20px;
+    }
+    /* navigation bar :list styling */
+    #navbar{
+        position:relative;
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.8rem;
+    }
+    #navbar ul li a{
+        color: black;
+        display: block;
+        padding:   10px 72px;
+        border-radius: 70px;
+        text-decoration: none;
+    }
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+    }
+     
+    #home2{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+    }
+    #home2::before{
+        content: "";
+        background:url('../a.jpg') no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+     opacity: 0.6;
+    }
+    #home2 h1{
+        color: rgb(45, 51, 56);
+        text-align: center;
+        }
+        
+    .h1-primary{
+        font-size: 5rem;
+        padding-top: 2px;
+        text-align: center;
+    }
+     
+    .btn1{
+        padding: 6px 10px;
+        border: 2px solid rgba(125, 120, 120, 0.1);
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+        color: black;
+        margin: 10px;
+        font-size: 2.6rem;
+        cursor: pointer;
+            }
+    .btn1:hover{
+        background-image: linear-gradient(#fff,#f7e9d4) ;
+        text-transform: uppercase;
+    }
